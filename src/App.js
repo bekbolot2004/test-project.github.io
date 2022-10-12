@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import SkillsSection from "./Components/SkillsSection";
+import SliderProgramsSection from "./Components/SliderProgramsSection";
+import StepSection from "./Components/StepSection";
+import TrialSection from "./Components/TrialSection";
+import img from './bg.jpg'
+import Footer from "./Components/Footer";
+import Reviews from "./Components/Reviews";
+import WhatSayStudentsAbout from "./Components/WhatSayStudentsAbout";
+import Works from "./Components/Works";
+import SacrillClub from "./Components/SacrillClub";
+import SliderBlock from "./Components/SliderBlock";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <StepSection/>
+      <TrialSection/>
+      <SkillsSection/>
+      <SliderProgramsSection/>
+      {/* <div className="flex flex-col items-center bg-center bg-cover mt-60" style={{backgroundImage: `url(${img})`, height: '2900px'}}>
+
+      </div> */}
+      <SacrillClub/>
+      <Works/>
+      <WhatSayStudentsAbout/>
+      <SliderBlock/>
+      <Reviews/>
+      <Footer/>
+    </>
   );
 }
 
