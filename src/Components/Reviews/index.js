@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import People1 from './assets/people1.png'
 import star from './assets/Icon.svg'
-import starDark from './assets/Icon2.svg'
+// import starDark from './assets/Icon2.svg'
 import doubleQuotes from './assets/Vector.svg'
 
 const Reviews = () => {
@@ -55,13 +55,13 @@ const Reviews = () => {
       <div className='grid grid-cols-1 gap-4 mt-14 md:grid-cols-2'>
           {reviewsObj && reviewsObj.map((item) => 
             <div className='border border-[#E5E5E5] p-10 rounded-xl relative'>
-              <div className='absolute top-5 right-5 opacity-10'><img src={doubleQuotes} /></div>
+              <div className='absolute top-5 right-5 opacity-10'><img src={doubleQuotes} alt='photo1'/></div>
               <div className='flex gap-[2px]'>
-                <img src={star} />
-                <img src={star} />
-                <img src={star} />
-                <img src={star} />
-                <img src={star} />
+                <img src={star} alt='photo1'/>
+                <img src={star} alt='photo1'/>
+                <img src={star} alt='photo1'/>
+                <img src={star} alt='photo1'/>
+                <img src={star} alt='photo1'/>
               </div>
               <div className='flex text-base mt-2.5'>
                 <div >{item.login}</div>
@@ -70,7 +70,7 @@ const Reviews = () => {
               <p className='mt-5'>{item.title}</p>
               <div className='flex items-center mt-[30px]'>
                 <div>
-                  <img src={item.img} alt="photo" />
+                  <img src={item.img} alt='photo1' />
                 </div>
                 <div className='ml-5 gap-[10px]'>
                   <div className='text-[#333333] text-semibold text-xl'>{item.name}</div>

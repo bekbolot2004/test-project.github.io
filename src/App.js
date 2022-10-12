@@ -2,7 +2,6 @@ import SkillsSection from "./Components/SkillsSection";
 import SliderProgramsSection from "./Components/SliderProgramsSection";
 import StepSection from "./Components/StepSection";
 import TrialSection from "./Components/TrialSection";
-import img from './bg.jpg'
 import Footer from "./Components/Footer";
 import Reviews from "./Components/Reviews";
 import WhatSayStudentsAbout from "./Components/WhatSayStudentsAbout";

@@ -14,7 +14,7 @@ const StepSection = () => {
         <div className='flex justify-center items-center flex-col container md-auto relative'>
             <h1 className='font-bold text-6xl text-center mt-16'><span className='text-[#FF3A44]'>Wait! You're Almost There!</span> <br/> Just One More Step To Go</h1>
             <p className='mt-8 font-sm font-light text-center max-w-2xl'>You'll need to go through all the registration steps to gain access to our education platform, and then you can start learning. We have something special for you today.</p>
-            <div className='absolute top-5  flex justify-center items-center'><img src={emoji}/></div>
+            <div className='absolute top-5  flex justify-center items-center'><img src={emoji} alt='photo1'/></div>
         </div>
    </div>
   )

@@ -9,12 +9,12 @@ const Footer = () => {
         <div className='grid grid-cols-12 gap-12'>
             <div className='col-span-3'>
                 <div>
-                    <img src={Logo} alt='logo' className='h-10' />
+                    <img src={Logo} alt='photo1' className='h-10' />
                 </div>
                 <p className='text-[#808080] font-[16px] mt-7'>At Sacrill, expert practitioners in their fields share their expertise in online video courses at reasonable prices.</p>
                 <div className='flex items-center mt-7'>
-                    <img src={visa}/>
-                    <img src={stripe}/>
+                    <img src={visa} alt='photo1' />
+                    <img src={stripe}  alt='photo1'/>
                 </div>
             </div>
             <div className='grid col-span-4 grid-cols-2'>

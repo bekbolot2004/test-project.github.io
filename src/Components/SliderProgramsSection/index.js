@@ -2,21 +2,17 @@ import img1 from './assets/1.png'
 import img2 from './assets/2.png'
 import img3 from './assets/3.png'
 import img4 from './assets/4.png'
-import img5 from './assets/5.png'
-import React, { useRef, useState, useEffect } from "react";
+// import img5 from './assets/5.png'
+import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import Slider from "react-slick";
 
 
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
-import { title } from 'process'
+// import { Pagination, Navigation } from "swiper";
+// import { title } from 'process'
 
 
 
@@ -190,7 +186,7 @@ const SliderProgramsSection = () => {
           <Slider {...settings}>
         {listPrograms && listPrograms.map((item) => 
               <div className='w-[320px] flex flex-col mr-3'>
-                <img src={item.img} className='w-[320px] h-[180px] object-cover' />
+                <img src={item.img} className='w-[320px] h-[180px] object-cover' alt='photo1' />
                 <h4 className='mt-5 font-bold text-xl'>{item.title}</h4>
                 <p className='mt-2 text-base font-normal'>{item.author}</p>
               </div>

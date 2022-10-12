@@ -4,25 +4,25 @@ import woman from './assets/woman.png'
 import arrow from './assets/arrow.svg'
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const {onClick } = props;
     return (
       <div
         className={'absolute -left-[50%] top-full h-[96px] w-[96px] rounded-full border border-black flex items-center justify-center cursor-pointer'}
         onClick={onClick}
       >
-      <img className='rotate-180' src={arrow} />
+      <img className='rotate-180' src={arrow} alt='photo1' />
       </div>
     );
   }
   
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const {onClick } = props;
     return (
         <div
         className={'absolute -left-[38%] top-full h-[96px] w-[96px] rounded-full border border-black flex items-center justify-center cursor-pointer'}
         onClick={onClick}
         >
-      <img src={arrow} />
+      <img src={arrow} alt='photo1' />
       </div>
     );
   }
@@ -51,7 +51,7 @@ const SliderBlock = () => {
                 {[1,2,3,4,5].map((item) => 
                     <div className=' bg-[#F0F6F4] rounded-xl p-[60px]'>
                 <div className='flex items-center gap-[30px]'>
-                    <img src={woman} className='h-20 w-20 rounded-full' />
+                    <img src={woman} className='h-20 w-20 rounded-full' alt='photo1' />
                     <h3 className='text-[28px]'>Linda</h3>
                 </div>
                 <p className='mt-[30px] text-xl font-light italic'>The subscription to Sacrill has helped me to know what I really like, what topics are close and interesting and what is not worth wasting time on. It is an unlimited opportunity to learn for a small amount of money. I have always bought different online courses, but it often happened that the topic is interesting but the expert's presentation is boring and I quickly lost interest and left the course without getting the desired result. However, I can choose which author I feel more comfortable with, which topics I want to delve into, and which ones don't suit me at all. Sacrill is a great way to find a new hobby and get better every day. I definitely recommend it to those who want to improve themselves, their lives and strive to be a well-rounded and interesting person.</p>

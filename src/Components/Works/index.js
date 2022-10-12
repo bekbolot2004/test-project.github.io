@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import bg1 from './assets/1.png'
 import bg2 from './assets/2.png'
 import bg3 from './assets/3.png'
 import img from './assets/img.png'
 import star from './assets/Icon.svg'
-import starDark from './assets/Icon2.svg'
+// import starDark from './assets/Icon2.svg'
 
 const Works = () => {
 
@@ -92,7 +92,7 @@ const Works = () => {
                 <div className='p-[30px]'>
                     <div className='flex items-center'>
                         <div>
-                        <img src={item.img} alt="photo" />
+                        <img src={item.img} alt='photo1' />
                         </div>
                         <div className='ml-5 gap-[10px]'>
                         <div className='text-[#333333] text-semibold text-xl'>{item.name}</div>
@@ -101,11 +101,11 @@ const Works = () => {
                     </div>
                     <p className='mt-[20px]'>{item.title}</p>
                     <div className='flex gap-[2px] mt-[50px]'>
-                        <img src={star} />
-                        <img src={star} />
-                        <img src={star} />
-                        <img src={star} />
-                        <img src={star} />
+                        <img src={star} alt='photo1' />
+                        <img src={star} alt='photo1' />
+                        <img src={star} alt='photo1' />
+                        <img src={star} alt='photo1'/>
+                        <img src={star} alt='photo1'/>
                     </div>
                 </div>
             </div>

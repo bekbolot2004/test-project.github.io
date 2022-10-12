@@ -52,7 +52,7 @@ const SkillsSection = () => {
         <div className='flex justify-between mt-16'>
             {category && category.map((item) => 
                 <div className=''>
-                    <img src={item.img}/>
+                    <img src={item.img} alt='photo1'/>
                     <p className='mt-4 font-normal'>{item.title}</p>
                 </div>
             )}
